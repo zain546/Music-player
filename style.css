@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+.main {
+  display: flex;
+  height: 85%;
+  width: 100%;
+  background-color: #111;
+  padding: 5vw 10vw;
+}
+.left {
+  width: 45%;
+  height: 100%;
+  /* background-color: #333; */
+  background-size: cover;
+  background-position: top;
+}
+.right {
+  width: 55%;
+  height: 100%;
+  /* background-color: burlywood; */
+  padding: 0 3vw;
+  overflow-y: scroll;
+}
+.right::-webkit-scrollbar {
+  width: 10px;
+}
+.right::-webkit-scrollbar-track {
+  background: #01010f;
+}
+.right::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+.right h3 {
+  font-size: 40px;
+}
+#all-songs {
+  /* background-color: red; */
+  height: 85%;
+  margin-top: 30px;
+}
+.song-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #5a5a5a;
+  margin-block: 5px;
+  padding: 15px 10px;
+  transition: 0.3s linear;
+  cursor: default;
+}
+.song-card:hover {
+  background-color: #1e1e1e;
+}
+.song-card .part-1 {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.part-1 img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.song-card h2 {
+  font-size: 21px;
+  font-weight: lighter;
+}
+.song-card h6 {
+  font-size: 16px;
+}
+/* .song-card:nth-last-child(1) {
+  border-bottom: 1px solid #5a5a5a;
+} */
+#player {
+  height: 15%;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+#player h3 {
+  background-color: rgb(48, 45, 45);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#player h3 i {
+  font-size: 30px;
+}
+#player h3:active {
+  scale: 0.93;
+}
