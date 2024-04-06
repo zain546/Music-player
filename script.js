@@ -74,6 +74,8 @@ next.addEventListener("click", function(){
     if(selectedSong < songsArray.length -1){
         selectedSong++;
         showSongs();
+        audio.play();
+
     }else{
          next.style.opacity = 0.4;
     }
@@ -83,6 +85,7 @@ previous.addEventListener("click", function(){
     if(selectedSong >0){
         selectedSong--;
         showSongs();
+        audio.play();
     }else{
          previous.style.opacity = 0.4;
     }
