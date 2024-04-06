@@ -75,6 +75,7 @@ next.addEventListener("click", function(){
         selectedSong++;
         showSongs();
         audio.play();
+        play.innerHTML = `<i class='bx bx-pause'></i>`;
 
     }else{
          next.style.opacity = 0.4;
@@ -86,6 +87,7 @@ previous.addEventListener("click", function(){
         selectedSong--;
         showSongs();
         audio.play();
+        play.innerHTML = `<i class='bx bx-pause'></i>`;
     }else{
          previous.style.opacity = 0.4;
     }
